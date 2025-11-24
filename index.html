@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>deluz · Pendientes y collares artesanales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pendientes y collares artesanales hechos a mano bajo la marca deluz." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">deluz</div>
+    <nav class="nav">
+      <a href="#coleccion">Colección</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Pendientes y collares artesanales</h1>
+      <p>Piezas únicas hechas a mano, inspiradas en la luz y en los pequeños detalles.</p>
+      <a href="#coleccion" class="btn">Ver colección</a>
+    </div>
+  </section>
+
+  <section id="coleccion" class="section">
+    <h2>Colección deluz</h2>
+    <p class="subtitle">Algunas de las piezas disponibles. Escríbeme para comprar o hacer encargos personalizados.</p>
+
+    <div class="grid-productos">
+      <!-- Producto 1 -->
+      <article class="producto">
+        <img src="img/pendientes1.jpg" alt="Pendientes artesanales modelo Aurora" />
+        <h3>Pendientes Aurora</h3>
+        <p>Pendientes ligeros con detalles dorados inspirados en el amanecer.</p>
+        <p class="precio">25 €</p>
+        <a href="#contacto" class="btn-sec">Quiero estos</a>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="producto">
+        <img src="img/collar1.jpg" alt="Collar artesanal modelo Luna" />
+        <h3>Collar Luna</h3>
+        <p>Collar minimalista con colgante en tonos plata, perfecto para el día a día.</p>
+        <p class="precio">30 €</p>
+        <a href="#contacto" class="btn-sec">Quiero este</a>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="producto">
+        <img src="img/pendientes2.jpg" alt="Pendientes artesanales modelo Cielo" />
+        <h3>Pendientes Cielo</h3>
+        <p>Pendientes en tonos azules, inspirados en el cielo al atardecer.</p>
+        <p class="precio">22 €</p>
+        <a href="#contacto" class="btn-sec">Quiero estos</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="section section-alt">
+    <h2>Sobre deluz</h2>
+    <p>
+      deluz nace de la idea de crear joyas artesanales con alma. Cada pieza está hecha a mano, 
+      con tiempo y cuidado, buscando que te acompañe muchos años y que te haga sentir especial.
+    </p>
+    <p>
+      Trabajo con materiales seleccionados y hago piezas bajo pedido, para que puedas tener algo realmente único.
+    </p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>
+      Si te interesa alguna pieza o quieres un encargo personalizado, puedes escribirme:
+    </p>
+    <ul class="contacto-lista">
+      <li>Email: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a></li>
+      <!-- Opcional: enlace a Etsy, Ko-fi, etc. -->
+      <!-- <li>Tienda: <a href="https://tu-tienda-externa.com" target="_blank">Ver tienda</a></li> -->
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> deluz · Hecho a mano con cariño.</p>
+  </footer>
+
+  <script>
+    // Rellenar año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
