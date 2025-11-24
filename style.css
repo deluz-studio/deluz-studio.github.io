@@ -1,1 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #222;
+  background: #faf7f4;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(250, 247, 244, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid #e3d9cf;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #fdf3e7, #f9e5f3);
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn,
+.btn-sec {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: 1px solid #c48f67;
+}
+
+.btn {
+  background: #c48f67;
+  color: white;
+}
+
+.btn:hover {
+  background: #a8724a;
+}
+
+.btn-sec {
+  background: transparent;
+  color: #c48f67;
+}
+
+.btn-sec:hover {
+  background: #f3e1d3;
+}
+
+/* Secciones */
+.section {
+  padding: 3rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-alt {
+  background: #f4ece5;
+  border-radius: 24px;
+}
+
+.section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+/* Productos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 0.8rem;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.precio {
+  font-weight: 600;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Contacto */
+.contacto-lista {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.contacto-lista li {
+  margin-bottom: 0.4rem;
+}
+
+.contacto-lista a {
+  color: #c48f67;
+  text-decoration: none;
+}
+
+.contacto-lista a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
 
